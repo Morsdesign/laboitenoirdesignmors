@@ -1,0 +1,257 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Box sizing */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* header */
+#page{
+  max-width:1200px;
+  margin:auto;
+  margin-top: 40px;
+} 
+
+#logo{
+  margin-right: 50px;
+  margin-left: 15px;
+  max-width:450px;
+  min-width: 180px;
+}
+
+
+
+#logo:hover{
+  transform: rotate(3.5deg);
+}
+
+#logo img{
+  max-width:100%;
+  height:auto;
+}
+
+
+header{
+  display:flex;
+  justify-content: space-around;
+
+  margin-bottom: 20px;
+}
+
+nav {
+  width:100%;
+  font-family:  'Oswald', sans-serif;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+#menu{
+  display:none;
+}
+
+.menu-mobile{
+  display:none;
+}
+
+
+ul{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height:100%;
+  align-items: center;
+}
+
+@media screen and (max-width : 800px){
+  
+  .menu-mobile{
+    display:block;
+    position:fixed;
+    top : 1px;
+    right:2px;
+    width:100px;
+    height:100px;
+    line-height:100px;
+    text-align:center;
+    cursor:pointer;
+    z-index:900;
+  }
+  
+.menu-mobile:after {
+  content: "MENU";
+}
+  
+  #menu:checked ~ .menu-mobile:after {
+    content: "X";
+  }
+  
+  nav ul {
+    display:none;
+  } 
+ 
+  #menu:checked ~ ul{
+    display:flex;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background-color:whitesmoke;
+    flex-direction:column;
+    justify-content: space-around;
+  }
+}
+/* slider */
+#slider {
+  margin-bottom: 20px;
+  max-width: 400px;
+  overflow:hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+#slider figure{
+  display:flex;
+  width: 500%;
+  animation: 18s slidy infinite;
+}
+
+#slider > figure > span {
+  width:100%;
+}
+
+#slider > figure > span > img {
+  max-width:100%;
+  height:auto;
+}
+
+@keyframes slidy {
+  0% { margin-left: 0%; }
+  20% { margin-left: 0%; }
+  25% { margin-left: -100%; }
+  45% { margin-left: -100%; }
+  50% { margin-left: -200%; }
+  70% { margin-left: -200%; }
+  75% { margin-left: -300%; }
+  95% { margin-left: -300%; }
+  100% { margin-left: -400%; }
+}
+
+/* photos */
+
+#textabout {
+  margin-top: 40px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: black;
+  text-align: center;
+}
+
+h2{
+  font-size: 20px; 
+}
+
+
+
+#photos img{
+  width:100%;
+  height:auto;
+}
+
+.grandeimage {
+  min-width: 50%;
+  width: calc((900px - 100%) * 1000);
+  max-width: 100%;
+}
+.grandeimage:hover {
+  transform: scale(1.01); 
+}
+
+.petiteimage {
+  min-width: 33%;
+  width: calc((900px - 100%) * 1000);
+  max-width: 100%;
+}
+
+.petiteimage:hover {
+  transform: scale(1.01); 
+}
+
+#photos{
+  display:flex;
+  margin-bottom:300px;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+
+
+.footer{
+  color: grey;
+  font-size: 12px;
+  margin-top: 50px;
+  padding: 20px;
+  font-family: lato;
+  text-align: center;
+}
