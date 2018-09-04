@@ -167,7 +167,7 @@ ul{
  }
  
  a:hover{
-  color:dimgrey;
+  color:gray;
   border-bottom: solid 2px black;
 }
 /* slider */
