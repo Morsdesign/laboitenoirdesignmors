@@ -67,7 +67,10 @@ table {
   max-width:450px;
   min-width: 180px;
 }
-
+ 
+#logo{
+   hover: none;
+}
 
 
 #logo:hover{
@@ -167,7 +170,17 @@ ul{
  }
  
  a:hover{
-  color:gray;
+  color: darkslategray;
+  border-bottom: solid 2px black;
+}
+
+.menu-mobile{
+  display: inline;
+  padding: 10px 10px 0 10px;
+ }
+ 
+ .menu-mobile:hover{
+  color: darkslategray;
   border-bottom: solid 2px black;
 }
 /* slider */
@@ -185,7 +198,7 @@ ul{
 #slider figure{
   display:flex;
   width: 500%;
-  animation: 18s slidy infinite;
+  animation: 20s slidy infinite;
 }
 
 #slider > figure > span {
@@ -206,7 +219,7 @@ ul{
   70% { margin-left: -200%; }
   75% { margin-left: -300%; }
   95% { margin-left: -300%; }
-  100% { margin-left: -400%; }
+  100% { margin-left:-400%; }
 }
 
 /* photos */
