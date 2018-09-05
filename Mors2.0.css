@@ -65,12 +65,9 @@ table {
   margin-right: 50px;
   margin-left: 15px;
   max-width:450px;
-  min-width: 180px;
+  min-width: 200px;
 }
  
-
-
-
 #logo:hover{
   transform: rotate(3.5deg);
 }
@@ -222,6 +219,12 @@ ul{
 /* text */
 h2{
   font-size: 17px; 
+  font-family: Lato;
+}
+
+h1{
+  font-size: 18px;
+  font-family: Lato;
 }
 
 #textabout {
@@ -309,7 +312,7 @@ h2{
 .footer{
   color:#DAA520;
   font-size: 12px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   padding: 20px;
   font-family: lato;
   text-align: center;
