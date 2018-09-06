@@ -173,6 +173,7 @@ ul{
   a:focus {
     color: #DAA520;
   } 
+  
 
 .menu-mobile{
   display: inline;
@@ -184,7 +185,7 @@ ul{
 
   a{
   transition-property: all;
-  transition-duration: 200ms; 
+  transition-duration: 400ms; 
   transition-timing-function: ease-in-out;
   transition-delay: .1s;
 }
