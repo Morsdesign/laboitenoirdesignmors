@@ -305,11 +305,11 @@ nav ul{
 /* effets image */
 
 .grandeimage:hover {
-  transform: scale(1.01); 
+  transform: scale(1.001); 
 }
 
 .petiteimage:hover {
-  transform: scale(1.01); 
+  transform: scale(1.001); 
 }
 
 .grandeimage:hover {
