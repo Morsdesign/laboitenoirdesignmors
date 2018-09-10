@@ -227,7 +227,7 @@ nav ul{
 #slider figure{
   display:flex;
   width: 500%;
-  animation: 20s slidy infinite;
+  animation: 15s slidy infinite;
 }
 
 #slider > figure > span {
@@ -248,14 +248,14 @@ nav ul{
   70% { margin-left: -200%; }
   75% { margin-left: -300%; }
   95% { margin-left: -300%; }
-  100% { margin-left:-400%; }
+  /* 100% { margin-left:-400%; } */
 }
 
 #slider{
   transition-property: all;
-  transition-duration: .26s; /* on aurait pu écrire 500ms également */
-  transition-timing-function: ease-in;
-  transition-delay: .2s;
+  transition-duration: 15s; 
+  transition-timing-function: ease-in-out;
+  transition-delay: 15;
    }
 
 /* text */
